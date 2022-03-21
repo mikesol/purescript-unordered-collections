@@ -5,7 +5,7 @@
 "use strict";
 
 /** @constructor */
-function MapNode(datamap, nodemap, content) {
+var MapNode = function(datamap, nodemap, content) {
     this.datamap = datamap;
     this.nodemap = nodemap;
     this.content = content;
@@ -478,7 +478,7 @@ MapNode.prototype.itraverse = function (pure, apply, f) {
 }
 
 /** @constructor */
-function Collision(keys, values) {
+var Collision = function(keys, values) {
     this.keys = keys;
     this.values = values;
 }
